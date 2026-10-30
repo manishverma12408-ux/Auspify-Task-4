@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My Online Quiz</h1>
+        <p>Test your knowledge and see your score!</p>
+    </header>
+
+    <main class="quiz-container">
+
+        <div id="quizBox">
+            <div class="quiz-info">
+                <span id="questionNumber">Question 1 of 5</span>
+                <span id="score">Score: 0</span>
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question"> What does HTML stand for?</h2>
+
+            <div id="options" class="options">
+                <button class="option" type="button">
+                    Hyper Text Markup Language
+                </button>
+
+                <button class="option" type="button">
+                    High Text Machine Language
+                </button>
+
+                <button class="option" type="button">
+                    Hyper Tool Multi Language
+                </button>
+
+                <button class="option" type="button">
+                    Home Text Markup Language
+                </button>
+            </div>
+
+            <p id="feedback"></p>
+
+            <div class="buttons">
+                <button id="previousBtn" type="button">Previous</button>
+                <button id="nextBtn" type="button">Next</button>
+                <button id="submitBtn" type="button" hidden>Submit Quiz</button>
+            </div>
+        </div>
+
+        <div id="resultBox" hidden>
+            <h2>Quiz Completed!</h2>
+            <p id="finalScore"></p>
+            <p id="resultMessage"></p>
+            <div id="answer"></div>
+            <button id="restartBtn" type="button">Try Again</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Online Quiz Application | Created by Manish Verma</p>
+    </footer>
+
+</body>
+</html>
